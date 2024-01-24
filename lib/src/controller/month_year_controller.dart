@@ -116,7 +116,7 @@ class _MonthYearController extends GetxController {
   /// this method is called once when the controller is initialized to generate the list of months to be shown in the year picker
   void _generateMonthList() {
     for (int i = 1; i <= 12; i++) {
-      monthsName.add(DateFormat.MMM().format(DateTime(2023, i, 1)));
+      monthsName.add(DateFormat.MMM('vi').format(DateTime(2023, i, 1)));
     }
   }
 
