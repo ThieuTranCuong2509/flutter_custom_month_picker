@@ -30,7 +30,7 @@ class _MonthPickerState extends State<_MonthPicker> {
       child: GridView.count(
         physics: const NeverScrollableScrollPhysics(),
         crossAxisCount: 4,
-        childAspectRatio: 2,
+        childAspectRatio: 4,
         children: List.generate(controller.monthsName.length, (index) {
           bool isDisabled = controller.isDisabledMonth(index + 1);
           return GestureDetector(
