@@ -24,13 +24,13 @@ class _MonthPickerState extends State<_MonthPicker> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 260,
+      height: 320,
       width: double.infinity,
       color: widget.backgroundColor,
       child: GridView.count(
         physics: const NeverScrollableScrollPhysics(),
         crossAxisCount: 4,
-        childAspectRatio: 4,
+        childAspectRatio: 2,
         children: List.generate(controller.monthsName.length, (index) {
           bool isDisabled = controller.isDisabledMonth(index + 1);
           return GestureDetector(
