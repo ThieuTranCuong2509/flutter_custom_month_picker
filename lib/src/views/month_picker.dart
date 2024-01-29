@@ -29,7 +29,7 @@ class _MonthPickerState extends State<_MonthPicker> {
       color: widget.backgroundColor,
       child: GridView.count(
         physics: const NeverScrollableScrollPhysics(),
-        crossAxisCount: 3,
+        crossAxisCount: 6,
         childAspectRatio: 2,
         children: List.generate(controller.monthsName.length, (index) {
           bool isDisabled = controller.isDisabledMonth(index + 1);
